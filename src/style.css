@@ -1,26 +1,103 @@
 :root {
   font-size: 16px/1 em;
   font-family: 'Sofia Pro', sans-serif;
-  color: ;
+}
+
+html {
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  line-height: lightgray 1px solid;
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
 }
 
 a {
+  text-decoration: none;
+  color: #222222;
 }
-a:hover {
+#git {
+  border-radius: 9999px;
+}
+/* main is the page container */
+text {
+  color: gray;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  padding: 0 0.2rem;
+}
+main {
+  padding: 1rem;
+  background-color: aliceblue;
+}
+section {
+  display: grid;
+  /* border: solid red; */
+  grid-template-columns: min-content 1fr min-content;
+  /* grid-template-rows: 1fr; */
+}
+article {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1rem;
+  align-items: center;
 }
 
-body {
+.small {
+  display: flex;
+  border-radius: 9999px;
+  /* align-items: flex-end; */
+}
+.tagged {
+  display: flex;
+  width: 22rem;
+  /* border: solid blue; */
+  justify-content: space-between;
+}
+.kitty {
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+li.detail {
+  display: flex;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
 }
 
-h1 {
-  font-size: 4rem;
+/* ul::marker {
+  display: flex;
+  text-decoration: none;
+} */
+
+li {
+  display: flex;
+  padding: 0 2rem 0 0;
+  text-decoration: none;
 }
 
-.subhead {
+/* this is the container for each block of info */
+
+img {
 }
-p {
+/* iphone */
+@media screen (min-width: 767px) {
+  nav a {
+  }
+  main {
+    flex: 1 auto;
+  }
 }
-button {
-}
-button:hover {
+/* desktop */
+@media screen (min-width: 1720px) {
 }
