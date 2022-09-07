@@ -23,6 +23,8 @@
                 alt="GithubLogo"
             /></a>
           </li>
+        </ul>
+        <ul>
           <li>
             <a href="#">Octodex</a>
           </li>
@@ -33,14 +35,20 @@
 
       <nav>
         <ul>
-          <li>
-            <a href="https://twitter.com/githubdesign">Follow us on Twitter</a>
+          <li id="twitter">
+            <a href="https://twitter.com/githubdesign">
+              <span>Follow us on Twitter</span>
+              <img src="/src/twitter.png" height="30" width="30" />
+            </a>
           </li>
-          <li>
-            <a href="https://github.com/">Back to GitHub.com</a>
+          <li id="back">
+            <a href="https://github.com/"
+              ><span>Back to GitHub.com</span> <span id="alt">Back</span></a
+            >
           </li>
         </ul>
       </nav>
+
       <!-- end nav -->
     </header>
     <!-- MAIN -->
@@ -307,8 +315,9 @@
     </main>
     <footer>
       <div>
-        <p>© 2013 – 2020 GitHub, Inc. All rights reserved.</p>
+        <p>© 2013 – 2022 GitHub, Inc. All rights reserved.</p>
       </div>
     </footer>
+    <media-button></media-button>
   </body>
 </html>
